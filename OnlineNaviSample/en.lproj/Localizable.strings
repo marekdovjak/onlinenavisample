@@ -1,0 +1,73 @@
+/* 
+  Localizable.strings
+  OnlineNaviSample
+
+  Created by mdovjak on 17/10/2018.
+  Copyright © 2018 Sygic. All rights reserved.
+*/
+
+/*buttons*/
+"error" = "Error";
+"ok" = "OK";
+"recenter" = "Re-center";
+
+/*sygic maps init result*/
+"init.error.keyVerificationFailed" = "Application client id and secret verification has failed";
+"init.error.invalidApi" = "Invalid application client id or secret";
+"init.error.success" = "Success";
+"init.error.runtimeError" = "Runtime error";
+
+/*route compute errors*/
+"routingFailed" = "Routing failed ";
+"compute.error.unreachableTarget" = "Unreachable target";
+"compute.error.wrongFromPoint" = "Wrong from point";
+"compute.error.unspecifiedFault" = "Unspecified error";
+"compute.error.discontinuousGraph" = "Discontinuous graph";
+"compute.error.userCanceled" = "User cancelled";
+"compute.error.lowMemory" = "Low memory";
+"compute.error.roadsLimitReached" = "Roads limit reached";
+"compute.error.frontEmpty" = "Front empty";
+"compute.error.initializationFailed" = "Initialization failed";
+"compute.error.pathReconstructFailed" = "Path reconstruction failed";
+"compute.error.userRouteRemoved" = "User route removed";
+"compute.error.pathConstructFailed" = "Path construction failed";
+"compute.error.pathNotFound" = "Path not found";
+"compute.error.backwardFrontEmpty" = "Backward front empty";
+"compute.error.invalidSelection" = "Invalid selection";
+"compute.error.alternativeRejected" = "Alternative rejected";
+"compute.error.nullHell" = "NULL hell";
+"compute.error.onlineServiceError" = "Online service error";
+"compute.error.connection.onlineServiceNotAvailable" = "Online service not available";
+"compute.error.onlineServiceWrongResponse" = "Wrong online service response";
+"compute.error.onlineServiceTimeout" = "Online service timeout";
+"compute.error.fromAndToPointsTooClose" = "From and to points are too close";
+"compute.error.noComputeCanBeCalled" = "No compute service available";
+"compute.error.couldNotRetrieveSavedRoute" = "Unable to retrieve saved route";
+"compute.error.mapNotAvailable" = "Map not available";
+
+/* Don't translate text in the parenthesis. The word to translate is just 'Exit', same as translation for key: route.instructionsText.listBox.exit */
+"Exit (FROM HIGHWAY)" = "Exit";
+"feet" = "feet";
+"route.instructionsText.continueAlong" = "Follow the route";
+
+/* feet short */
+"ft" = "ft";
+
+/* timeHourShort */
+"h" = "h";
+"kilometers" = "kilometers";
+"Limit" = "Limit";
+"meters" = "meters";
+
+/* miles short */
+"mi" = "mi";
+"miles" = "miles";
+
+/* timeSecondShort */
+"sec" = "sec";
+"yards" = "yards";
+
+/* yards short */
+"yd" = "yd";
+
+"finishReached" = "You have reached your destination!";

@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2FB357037585516C0846DE /* Pods_OnlineNaviSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B01842173473507D1CDFFD2 /* Pods_OnlineNaviSample.framework */; };
+		CC275D77217EFBA900BF6CC8 /* UIInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC275D76217EFBA900BF6CC8 /* UIInsetLabel.swift */; };
+		CC60F026217EF8F300A4EB1D /* RouteNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60F025217EF8F300A4EB1D /* RouteNumbersView.swift */; };
+		CC6D53DB217F0C2600B7B776 /* roadSigns in Resources */ = {isa = PBXBuildFile; fileRef = CC6D53DA217F0C2600B7B776 /* roadSigns */; };
+		CC9F112D2175F7650022ED40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F112C2175F7650022ED40 /* AppDelegate.swift */; };
+		CC9F112F2175F7650022ED40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F112E2175F7650022ED40 /* ViewController.swift */; };
+		CC9F11322175F7650022ED40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9F11302175F7650022ED40 /* Main.storyboard */; };
+		CC9F11342175F7660022ED40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC9F11332175F7660022ED40 /* Assets.xcassets */; };
+		CC9F11372175F7660022ED40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9F11352175F7660022ED40 /* LaunchScreen.storyboard */; };
+		CC9F120321760CFA0022ED40 /* OnlineNaviSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F120221760CFA0022ED40 /* OnlineNaviSampleViewController.swift */; };
+		CC9F121421770D370022ED40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC9F121621770D370022ED40 /* Localizable.strings */; };
+		CC9F121B217749790022ED40 /* RecenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F121A217749790022ED40 /* RecenterButton.swift */; };
+		CC9F121F2177624F0022ED40 /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F121E2177624F0022ED40 /* DirectionView.swift */; };
+		CC9F122C217765060022ED40 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F1224217765050022ED40 /* StringExtension.swift */; };
+		CC9F122D217765060022ED40 /* SygicErrorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F1225217765050022ED40 /* SygicErrorExtensions.swift */; };
+		CC9F122E217765060022ED40 /* SygicFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F1227217765050022ED40 /* SygicFonts.swift */; };
+		CC9F122F217765060022ED40 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F1228217765050022ED40 /* FontManager.swift */; };
+		CC9F1230217765060022ED40 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F1229217765050022ED40 /* FontSize.swift */; };
+		CC9F1231217765060022ED40 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F122A217765050022ED40 /* FontFamily.swift */; };
+		CC9F1232217765060022ED40 /* SygicIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F122B217765050022ED40 /* SygicIcons.swift */; };
+		CC9F12342177655E0022ED40 /* SYManeuverExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F12332177655E0022ED40 /* SYManeuverExtensions.swift */; };
+		CC9F1236217766C50022ED40 /* OrientationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F1235217766C50022ED40 /* OrientationUtils.swift */; };
+		CC9F123B2179F6890022ED40 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F123A2179F6890022ED40 /* UIViewExtensions.swift */; };
+		CCB2296321956EDC00577D83 /* SygicMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB2296221956EDC00577D83 /* SygicMaps.framework */; };
+		CCB2296521956EF200577D83 /* SygicMaps.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CCB2296221956EDC00577D83 /* SygicMaps.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCC9DEEA217DA8AD00438CB0 /* DirectionSignpostContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEE9217DA8AD00438CB0 /* DirectionSignpostContainer.swift */; };
+		CCC9DEEE217DAEAD00438CB0 /* SignpostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEED217DAEAD00438CB0 /* SignpostView.swift */; };
+		CCC9DEF3217DC77B00438CB0 /* SygicIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC9DEF2217DC77100438CB0 /* SygicIcons.ttf */; };
+		CCC9DEF5217DDD4C00438CB0 /* SYDistanceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEF4217DDD4C00438CB0 /* SYDistanceExtensions.swift */; };
+		CCC9DEF7217DDD8A00438CB0 /* FormattersHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEF6217DDD8A00438CB0 /* FormattersHelpers.swift */; };
+		CCC9DEF9217DE42100438CB0 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEF8217DE42100438CB0 /* UILabelExtensions.swift */; };
+		CCC9DEFB217DE4B100438CB0 /* DirectionSignpostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEFA217DE4B100438CB0 /* DirectionSignpostViewModel.swift */; };
+		CCC9DEFD217DF95100438CB0 /* SYSignpostElementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9DEFC217DF95100438CB0 /* SYSignpostElementExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCB2296421956EE900577D83 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCB2296521956EF200577D83 /* SygicMaps.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B01842173473507D1CDFFD2 /* Pods_OnlineNaviSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineNaviSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78FF1E4BF04715929F7DCB73 /* Pods-OnlineNaviSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineNaviSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineNaviSample/Pods-OnlineNaviSample.release.xcconfig"; sourceTree = "<group>"; };
+		BF9A42E2B992338E0025B77E /* Pods-OnlineNaviSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineNaviSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineNaviSample/Pods-OnlineNaviSample.debug.xcconfig"; sourceTree = "<group>"; };
+		CC275D76217EFBA900BF6CC8 /* UIInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInsetLabel.swift; sourceTree = "<group>"; };
+		CC60F025217EF8F300A4EB1D /* RouteNumbersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteNumbersView.swift; sourceTree = "<group>"; };
+		CC6D53DA217F0C2600B7B776 /* roadSigns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = roadSigns; sourceTree = "<group>"; };
+		CC9F11292175F7650022ED40 /* OnlineNaviSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineNaviSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9F112C2175F7650022ED40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC9F112E2175F7650022ED40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC9F11312175F7650022ED40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC9F11332175F7660022ED40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC9F11362175F7660022ED40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC9F11382175F7660022ED40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9F120221760CFA0022ED40 /* OnlineNaviSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineNaviSampleViewController.swift; sourceTree = "<group>"; };
+		CC9F121521770D370022ED40 /* en */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; fileEncoding = 4; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC9F121A217749790022ED40 /* RecenterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecenterButton.swift; sourceTree = "<group>"; };
+		CC9F121E2177624F0022ED40 /* DirectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
+		CC9F1224217765050022ED40 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CC9F1225217765050022ED40 /* SygicErrorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SygicErrorExtensions.swift; sourceTree = "<group>"; };
+		CC9F1227217765050022ED40 /* SygicFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SygicFonts.swift; sourceTree = "<group>"; };
+		CC9F1228217765050022ED40 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		CC9F1229217765050022ED40 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		CC9F122A217765050022ED40 /* FontFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
+		CC9F122B217765050022ED40 /* SygicIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SygicIcons.swift; sourceTree = "<group>"; };
+		CC9F12332177655E0022ED40 /* SYManeuverExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYManeuverExtensions.swift; sourceTree = "<group>"; };
+		CC9F1235217766C50022ED40 /* OrientationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationUtils.swift; sourceTree = "<group>"; };
+		CC9F123A2179F6890022ED40 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CCB2296221956EDC00577D83 /* SygicMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SygicMaps.framework; path = OnlineNaviSample/Frameworks/SygicMaps.framework; sourceTree = "<group>"; };
+		CCC9DEE9217DA8AD00438CB0 /* DirectionSignpostContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionSignpostContainer.swift; sourceTree = "<group>"; };
+		CCC9DEED217DAEAD00438CB0 /* SignpostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignpostView.swift; sourceTree = "<group>"; };
+		CCC9DEF2217DC77100438CB0 /* SygicIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SygicIcons.ttf; sourceTree = "<group>"; };
+		CCC9DEF4217DDD4C00438CB0 /* SYDistanceExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYDistanceExtensions.swift; sourceTree = "<group>"; };
+		CCC9DEF6217DDD8A00438CB0 /* FormattersHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormattersHelpers.swift; sourceTree = "<group>"; };
+		CCC9DEF8217DE42100438CB0 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		CCC9DEFA217DE4B100438CB0 /* DirectionSignpostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionSignpostViewModel.swift; sourceTree = "<group>"; };
+		CCC9DEFC217DF95100438CB0 /* SYSignpostElementExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYSignpostElementExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC9F11262175F7650022ED40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2FB357037585516C0846DE /* Pods_OnlineNaviSample.framework in Frameworks */,
+				CCB2296321956EDC00577D83 /* SygicMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FE120097D9EF19C7266AB4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A42E2B992338E0025B77E /* Pods-OnlineNaviSample.debug.xcconfig */,
+				78FF1E4BF04715929F7DCB73 /* Pods-OnlineNaviSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC60F024217EF8CF00A4EB1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9DEFA217DE4B100438CB0 /* DirectionSignpostViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC9F11202175F7650022ED40 = {
+			isa = PBXGroup;
+			children = (
+				CC9F112B2175F7650022ED40 /* OnlineNaviSample */,
+				CC9F112A2175F7650022ED40 /* Products */,
+				6FE120097D9EF19C7266AB4F /* Pods */,
+				CEF746F1117CD3D02D866FA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC9F112A2175F7650022ED40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F11292175F7650022ED40 /* OnlineNaviSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC9F112B2175F7650022ED40 /* OnlineNaviSample */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F120121760CFA0022ED40 /* OnlineNaviSampleViewController */,
+				CCC9DEEF217DC62100438CB0 /* Resources */,
+				CC9F1222217765050022ED40 /* Utils */,
+				CC9F112C2175F7650022ED40 /* AppDelegate.swift */,
+				CC9F112E2175F7650022ED40 /* ViewController.swift */,
+				CC9F11302175F7650022ED40 /* Main.storyboard */,
+				CC9F11332175F7660022ED40 /* Assets.xcassets */,
+				CC9F11352175F7660022ED40 /* LaunchScreen.storyboard */,
+				CC9F11382175F7660022ED40 /* Info.plist */,
+				CC9F121621770D370022ED40 /* Localizable.strings */,
+			);
+			path = OnlineNaviSample;
+			sourceTree = "<group>";
+		};
+		CC9F120121760CFA0022ED40 /* OnlineNaviSampleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC60F024217EF8CF00A4EB1D /* Models */,
+				CC9F1219217749790022ED40 /* Views */,
+				CC9F120221760CFA0022ED40 /* OnlineNaviSampleViewController.swift */,
+			);
+			path = OnlineNaviSampleViewController;
+			sourceTree = "<group>";
+		};
+		CC9F1219217749790022ED40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F121E2177624F0022ED40 /* DirectionView.swift */,
+				CC9F121A217749790022ED40 /* RecenterButton.swift */,
+				CCC9DEE9217DA8AD00438CB0 /* DirectionSignpostContainer.swift */,
+				CC60F025217EF8F300A4EB1D /* RouteNumbersView.swift */,
+				CCC9DEED217DAEAD00438CB0 /* SignpostView.swift */,
+				CC275D76217EFBA900BF6CC8 /* UIInsetLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC9F1222217765050022ED40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F1223217765050022ED40 /* Extensions */,
+				CC9F1226217765050022ED40 /* Fonts */,
+				CCC9DEF6217DDD8A00438CB0 /* FormattersHelpers.swift */,
+				CC9F1235217766C50022ED40 /* OrientationUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC9F1223217765050022ED40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F1224217765050022ED40 /* StringExtension.swift */,
+				CCC9DEF4217DDD4C00438CB0 /* SYDistanceExtensions.swift */,
+				CC9F1225217765050022ED40 /* SygicErrorExtensions.swift */,
+				CC9F12332177655E0022ED40 /* SYManeuverExtensions.swift */,
+				CCC9DEFC217DF95100438CB0 /* SYSignpostElementExtensions.swift */,
+				CCC9DEF8217DE42100438CB0 /* UILabelExtensions.swift */,
+				CC9F123A2179F6890022ED40 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC9F1226217765050022ED40 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC9F1227217765050022ED40 /* SygicFonts.swift */,
+				CC9F1228217765050022ED40 /* FontManager.swift */,
+				CC9F1229217765050022ED40 /* FontSize.swift */,
+				CC9F122A217765050022ED40 /* FontFamily.swift */,
+				CC9F122B217765050022ED40 /* SygicIcons.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CCC9DEEF217DC62100438CB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC6D53DA217F0C2600B7B776 /* roadSigns */,
+				CCC9DEF2217DC77100438CB0 /* SygicIcons.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEF746F1117CD3D02D866FA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCB2296221956EDC00577D83 /* SygicMaps.framework */,
+				1B01842173473507D1CDFFD2 /* Pods_OnlineNaviSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC9F11282175F7650022ED40 /* OnlineNaviSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9F113B2175F7660022ED40 /* Build configuration list for PBXNativeTarget "OnlineNaviSample" */;
+			buildPhases = (
+				16D2E19E895D86F1B25A9370 /* [CP] Check Pods Manifest.lock */,
+				CC9F11252175F7650022ED40 /* Sources */,
+				CC9F11262175F7650022ED40 /* Frameworks */,
+				CC9F11272175F7650022ED40 /* Resources */,
+				34290A485C494BDEFD9F4AC9 /* [CP] Embed Pods Frameworks */,
+				CCB2296421956EE900577D83 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlineNaviSample;
+			productName = OnlineNaviSample;
+			productReference = CC9F11292175F7650022ED40 /* OnlineNaviSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC9F11212175F7650022ED40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Sygic;
+				TargetAttributes = {
+					CC9F11282175F7650022ED40 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = CC9F11242175F7650022ED40 /* Build configuration list for PBXProject "OnlineNaviSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC9F11202175F7650022ED40;
+			productRefGroup = CC9F112A2175F7650022ED40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC9F11282175F7650022ED40 /* OnlineNaviSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC9F11272175F7650022ED40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9F11372175F7660022ED40 /* LaunchScreen.storyboard in Resources */,
+				CC9F121421770D370022ED40 /* Localizable.strings in Resources */,
+				CC9F11342175F7660022ED40 /* Assets.xcassets in Resources */,
+				CC6D53DB217F0C2600B7B776 /* roadSigns in Resources */,
+				CC9F11322175F7650022ED40 /* Main.storyboard in Resources */,
+				CCC9DEF3217DC77B00438CB0 /* SygicIcons.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16D2E19E895D86F1B25A9370 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnlineNaviSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34290A485C494BDEFD9F4AC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OnlineNaviSample/Pods-OnlineNaviSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSVG/SwiftSVG.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSVG.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineNaviSample/Pods-OnlineNaviSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC9F11252175F7650022ED40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC60F026217EF8F300A4EB1D /* RouteNumbersView.swift in Sources */,
+				CC9F1236217766C50022ED40 /* OrientationUtils.swift in Sources */,
+				CC9F1231217765060022ED40 /* FontFamily.swift in Sources */,
+				CC9F122F217765060022ED40 /* FontManager.swift in Sources */,
+				CCC9DEFD217DF95100438CB0 /* SYSignpostElementExtensions.swift in Sources */,
+				CCC9DEFB217DE4B100438CB0 /* DirectionSignpostViewModel.swift in Sources */,
+				CC9F120321760CFA0022ED40 /* OnlineNaviSampleViewController.swift in Sources */,
+				CCC9DEF5217DDD4C00438CB0 /* SYDistanceExtensions.swift in Sources */,
+				CC9F122E217765060022ED40 /* SygicFonts.swift in Sources */,
+				CC9F122C217765060022ED40 /* StringExtension.swift in Sources */,
+				CCC9DEEA217DA8AD00438CB0 /* DirectionSignpostContainer.swift in Sources */,
+				CC9F121B217749790022ED40 /* RecenterButton.swift in Sources */,
+				CC9F1230217765060022ED40 /* FontSize.swift in Sources */,
+				CC275D77217EFBA900BF6CC8 /* UIInsetLabel.swift in Sources */,
+				CC9F1232217765060022ED40 /* SygicIcons.swift in Sources */,
+				CC9F123B2179F6890022ED40 /* UIViewExtensions.swift in Sources */,
+				CC9F12342177655E0022ED40 /* SYManeuverExtensions.swift in Sources */,
+				CCC9DEF9217DE42100438CB0 /* UILabelExtensions.swift in Sources */,
+				CCC9DEEE217DAEAD00438CB0 /* SignpostView.swift in Sources */,
+				CC9F121F2177624F0022ED40 /* DirectionView.swift in Sources */,
+				CC9F112F2175F7650022ED40 /* ViewController.swift in Sources */,
+				CC9F112D2175F7650022ED40 /* AppDelegate.swift in Sources */,
+				CCC9DEF7217DDD8A00438CB0 /* FormattersHelpers.swift in Sources */,
+				CC9F122D217765060022ED40 /* SygicErrorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC9F11302175F7650022ED40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9F11312175F7650022ED40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC9F11352175F7660022ED40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9F11362175F7660022ED40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CC9F121621770D370022ED40 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC9F121521770D370022ED40 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC9F11392175F7660022ED40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC9F113A2175F7660022ED40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC9F113C2175F7660022ED40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9A42E2B992338E0025B77E /* Pods-OnlineNaviSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHXY425M9Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlineNaviSample/Frameworks",
+				);
+				INFOPLIST_FILE = OnlineNaviSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sygic.OnlineNaviSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC9F113D2175F7660022ED40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FF1E4BF04715929F7DCB73 /* Pods-OnlineNaviSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHXY425M9Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlineNaviSample/Frameworks",
+				);
+				INFOPLIST_FILE = OnlineNaviSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sygic.OnlineNaviSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC9F11242175F7650022ED40 /* Build configuration list for PBXProject "OnlineNaviSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9F11392175F7660022ED40 /* Debug */,
+				CC9F113A2175F7660022ED40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9F113B2175F7660022ED40 /* Build configuration list for PBXNativeTarget "OnlineNaviSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9F113C2175F7660022ED40 /* Debug */,
+				CC9F113D2175F7660022ED40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC9F11212175F7650022ED40 /* Project object */;
+}
