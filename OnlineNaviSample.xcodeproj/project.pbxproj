@@ -244,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC9F113B2175F7660022ED40 /* Build configuration list for PBXNativeTarget "OnlineNaviSample" */;
 			buildPhases = (
+				CCB229662195849100577D83 /* Unzip SygicMaps */,
 				16D2E19E895D86F1B25A9370 /* [CP] Check Pods Manifest.lock */,
 				CC9F11252175F7650022ED40 /* Sources */,
 				CC9F11262175F7650022ED40 /* Frameworks */,
@@ -345,6 +346,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineNaviSample/Pods-OnlineNaviSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CCB229662195849100577D83 /* Unzip SygicMaps */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Unzip SygicMaps";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo\necho '## Unpacking framework...'\nunzip OnlineNaviSample/Frameworks/SygicMaps.framework.zip -d OnlineNaviSample/Frameworks/ > /dev/null\nrm -rf \"OnlineNaviSample/Frameworks/__MACOSX\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
